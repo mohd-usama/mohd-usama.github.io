@@ -8,7 +8,6 @@ import '../Widgets/hero.dart';
 import '../Widgets/navbar.dart';
 import '../Widgets/projects.dart';
 import '../Widgets/skills.dart';
-import '../Widgets/testimonials.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -64,7 +63,6 @@ class _HomeScreenState extends State<HomeScreen> {
             Container(key: aboutKey, child: AboutMeSection(experienceKey: experienceKey)),
             Container(key: skillsKey, child: const SkillsSection()),
             Container(key: projectsKey, child: const ProjectsSection()),
-            const TestimonialsSection(),
             Container(key: contactKey, child: const ContactSection()),
             FooterSection(
               onAbout: () => scrollTo(aboutKey),
